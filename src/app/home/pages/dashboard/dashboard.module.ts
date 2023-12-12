@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ScannerPageRoutingModule } from './scanner-routing.module';
+import { DashboardPageRoutingModule } from './dashboard-routing.module';
 
-import { ScannerPage } from './scanner.page';
+import { DashboardPage } from './dashboard.page';
 import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { MatCardModule } from '@angular/material/card';
     CommonModule,
     FormsModule,
     IonicModule,
-    ScannerPageRoutingModule,
+    DashboardPageRoutingModule,
     MatCardModule
   ],
-  declarations: [ScannerPage]
+  declarations: [DashboardPage]
 })
-export class ScannerPageModule {}
+export class DashboardPageModule {}

@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { NavigationComponent } from '../layout/navigation/navigation.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { NavigationComponent } from '../layout/navigation/navigation.component';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    MatCardModule
   ],
   declarations: [HomePage, NavigationComponent]
 })
