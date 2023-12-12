@@ -1,0 +1,7 @@
+{
+  "name": "CPESD-MOB",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
