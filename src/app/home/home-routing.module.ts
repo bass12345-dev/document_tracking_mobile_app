@@ -4,6 +4,8 @@ import { HomePage } from './home.page';
 import { ScannerPage } from './pages/scanner/scanner.page';
 import { IncomingPage } from './pages/incoming/incoming.page';
 import { DashboardPage } from './pages/dashboard/dashboard.page';
+import { ReceivedPage } from './pages/received/received.page';
+import { ForwardedPage } from './pages/forwarded/forwarded.page';
 
 const routes: Routes = [
   {
@@ -14,6 +16,8 @@ const routes: Routes = [
       { path : 'scanner', component : ScannerPage},
       { path : 'incoming', component : IncomingPage},
       { path : 'dashboard', component : DashboardPage},
+      { path : 'received', component : ReceivedPage},
+      { path : 'forwarded', component : ForwardedPage},
 
     ]
   },
@@ -28,6 +32,14 @@ const routes: Routes = [
   {
     path: 'dashboard',
     loadChildren: () => import('./pages/dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'received',
+    loadChildren: () => import('./pages/received/received.module').then( m => m.ReceivedPageModule)
+  },
+  {
+    path: 'forwarded',
+    loadChildren: () => import('./pages/forwarded/forwarded.module').then( m => m.ForwardedPageModule)
   }
 ];
 
